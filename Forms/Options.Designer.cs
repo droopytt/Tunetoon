@@ -29,174 +29,174 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Options));
-            OkayButton = new System.Windows.Forms.Button();
-            RewrittenLabel = new System.Windows.Forms.Label();
-            ClashLabel = new System.Windows.Forms.Label();
-            SelectionCheckBox = new System.Windows.Forms.CheckBox();
-            GlobalEndCheckBox = new System.Windows.Forms.CheckBox();
-            RewrittenPath = new System.Windows.Forms.TextBox();
-            ClashPath = new System.Windows.Forms.TextBox();
-            RewrittenPathButton = new System.Windows.Forms.Button();
-            ClashPathButton = new System.Windows.Forms.Button();
-            SkipUpdatesCheckBox = new System.Windows.Forms.CheckBox();
-            EncryptAccsCheckBox = new System.Windows.Forms.CheckBox();
-            OpenAccountsInRowsCheckbox = new System.Windows.Forms.CheckBox();
-            SuspendLayout();
+            this.OkayButton = new System.Windows.Forms.Button();
+            this.RewrittenLabel = new System.Windows.Forms.Label();
+            this.ClashLabel = new System.Windows.Forms.Label();
+            this.SelectionCheckBox = new System.Windows.Forms.CheckBox();
+            this.GlobalEndCheckBox = new System.Windows.Forms.CheckBox();
+            this.RewrittenPath = new System.Windows.Forms.TextBox();
+            this.ClashPath = new System.Windows.Forms.TextBox();
+            this.RewrittenPathButton = new System.Windows.Forms.Button();
+            this.ClashPathButton = new System.Windows.Forms.Button();
+            this.SkipUpdatesCheckBox = new System.Windows.Forms.CheckBox();
+            this.EncryptAccsCheckBox = new System.Windows.Forms.CheckBox();
+            this.OpenAccountsInRowsCheckbox = new System.Windows.Forms.CheckBox();
+            this.SuspendLayout();
             // 
             // OkayButton
             // 
-            OkayButton.Location = new System.Drawing.Point(14, 229);
-            OkayButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            OkayButton.Name = "OkayButton";
-            OkayButton.Size = new System.Drawing.Size(564, 27);
-            OkayButton.TabIndex = 0;
-            OkayButton.Text = "Save";
-            OkayButton.UseVisualStyleBackColor = true;
-            OkayButton.Click += OkayButton_Click;
+            this.OkayButton.Location = new System.Drawing.Point(14, 229);
+            this.OkayButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.OkayButton.Name = "OkayButton";
+            this.OkayButton.Size = new System.Drawing.Size(564, 27);
+            this.OkayButton.TabIndex = 0;
+            this.OkayButton.Text = "Save";
+            this.OkayButton.UseVisualStyleBackColor = true;
+            this.OkayButton.Click += OkayButton_Click;
             // 
             // RewrittenLabel
             // 
-            RewrittenLabel.AutoSize = true;
-            RewrittenLabel.Location = new System.Drawing.Point(10, 16);
-            RewrittenLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            RewrittenLabel.Name = "RewrittenLabel";
-            RewrittenLabel.Size = new System.Drawing.Size(87, 15);
-            RewrittenLabel.TabIndex = 3;
-            RewrittenLabel.Text = "Rewritten Path:";
+            this.RewrittenLabel.AutoSize = true;
+            this.RewrittenLabel.Location = new System.Drawing.Point(10, 16);
+            this.RewrittenLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.RewrittenLabel.Name = "RewrittenLabel";
+            this.RewrittenLabel.Size = new System.Drawing.Size(87, 15);
+            this.RewrittenLabel.TabIndex = 3;
+            this.RewrittenLabel.Text = "Rewritten Path:";
             // 
             // ClashLabel
             // 
-            ClashLabel.AutoSize = true;
-            ClashLabel.Location = new System.Drawing.Point(10, 74);
-            ClashLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            ClashLabel.Name = "ClashLabel";
-            ClashLabel.Size = new System.Drawing.Size(66, 15);
-            ClashLabel.TabIndex = 4;
-            ClashLabel.Text = "Clash Path:";
+            this.ClashLabel.AutoSize = true;
+            this.ClashLabel.Location = new System.Drawing.Point(10, 74);
+            this.ClashLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ClashLabel.Name = "ClashLabel";
+            this.ClashLabel.Size = new System.Drawing.Size(66, 15);
+            this.ClashLabel.TabIndex = 4;
+            this.ClashLabel.Text = "Clash Path:";
             // 
             // SelectionCheckBox
             // 
-            SelectionCheckBox.AutoSize = true;
-            SelectionCheckBox.Location = new System.Drawing.Point(398, 136);
-            SelectionCheckBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            SelectionCheckBox.Name = "SelectionCheckBox";
-            SelectionCheckBox.Size = new System.Drawing.Size(112, 19);
-            SelectionCheckBox.TabIndex = 5;
-            SelectionCheckBox.Text = "End by selection";
-            SelectionCheckBox.UseVisualStyleBackColor = true;
+            this.SelectionCheckBox.AutoSize = true;
+            this.SelectionCheckBox.Location = new System.Drawing.Point(398, 136);
+            this.SelectionCheckBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.SelectionCheckBox.Name = "SelectionCheckBox";
+            this.SelectionCheckBox.Size = new System.Drawing.Size(112, 19);
+            this.SelectionCheckBox.TabIndex = 5;
+            this.SelectionCheckBox.Text = "End by selection";
+            this.SelectionCheckBox.UseVisualStyleBackColor = true;
             // 
             // GlobalEndCheckBox
             // 
-            GlobalEndCheckBox.AutoSize = true;
-            GlobalEndCheckBox.Location = new System.Drawing.Point(398, 163);
-            GlobalEndCheckBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            GlobalEndCheckBox.Name = "GlobalEndCheckBox";
-            GlobalEndCheckBox.Size = new System.Drawing.Size(175, 19);
-            GlobalEndCheckBox.TabIndex = 6;
-            GlobalEndCheckBox.Text = "\"End All\" for all gameservers";
-            GlobalEndCheckBox.UseVisualStyleBackColor = true;
+            this.GlobalEndCheckBox.AutoSize = true;
+            this.GlobalEndCheckBox.Location = new System.Drawing.Point(398, 163);
+            this.GlobalEndCheckBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.GlobalEndCheckBox.Name = "GlobalEndCheckBox";
+            this.GlobalEndCheckBox.Size = new System.Drawing.Size(175, 19);
+            this.GlobalEndCheckBox.TabIndex = 6;
+            this.GlobalEndCheckBox.Text = "\"End All\" for all gameservers";
+            this.GlobalEndCheckBox.UseVisualStyleBackColor = true;
             // 
             // RewrittenPath
             // 
-            RewrittenPath.Location = new System.Drawing.Point(14, 35);
-            RewrittenPath.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            RewrittenPath.Name = "RewrittenPath";
-            RewrittenPath.Size = new System.Drawing.Size(517, 23);
-            RewrittenPath.TabIndex = 9;
+            this.RewrittenPath.Location = new System.Drawing.Point(14, 35);
+            this.RewrittenPath.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.RewrittenPath.Name = "RewrittenPath";
+            this.RewrittenPath.Size = new System.Drawing.Size(517, 23);
+            this.RewrittenPath.TabIndex = 9;
             // 
             // ClashPath
             // 
-            ClashPath.Location = new System.Drawing.Point(14, 92);
-            ClashPath.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            ClashPath.Name = "ClashPath";
-            ClashPath.Size = new System.Drawing.Size(517, 23);
-            ClashPath.TabIndex = 10;
+            this.ClashPath.Location = new System.Drawing.Point(14, 92);
+            this.ClashPath.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ClashPath.Name = "ClashPath";
+            this.ClashPath.Size = new System.Drawing.Size(517, 23);
+            this.ClashPath.TabIndex = 10;
             // 
             // RewrittenPathButton
             // 
-            RewrittenPathButton.Location = new System.Drawing.Point(539, 35);
-            RewrittenPathButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            RewrittenPathButton.Name = "RewrittenPathButton";
-            RewrittenPathButton.Size = new System.Drawing.Size(38, 23);
-            RewrittenPathButton.TabIndex = 11;
-            RewrittenPathButton.Text = "...";
-            RewrittenPathButton.UseVisualStyleBackColor = true;
-            RewrittenPathButton.Click += RewrittenPathButton_Click;
+            this.RewrittenPathButton.Location = new System.Drawing.Point(539, 35);
+            this.RewrittenPathButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.RewrittenPathButton.Name = "RewrittenPathButton";
+            this.RewrittenPathButton.Size = new System.Drawing.Size(38, 23);
+            this.RewrittenPathButton.TabIndex = 11;
+            this.RewrittenPathButton.Text = "...";
+            this.RewrittenPathButton.UseVisualStyleBackColor = true;
+            this.RewrittenPathButton.Click += RewrittenPathButton_Click;
             // 
             // ClashPathButton
             // 
-            ClashPathButton.Location = new System.Drawing.Point(539, 92);
-            ClashPathButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            ClashPathButton.Name = "ClashPathButton";
-            ClashPathButton.Size = new System.Drawing.Size(38, 24);
-            ClashPathButton.TabIndex = 12;
-            ClashPathButton.Text = "...";
-            ClashPathButton.UseVisualStyleBackColor = true;
-            ClashPathButton.Click += ClashPathButton_Click;
+            this.ClashPathButton.Location = new System.Drawing.Point(539, 92);
+            this.ClashPathButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ClashPathButton.Name = "ClashPathButton";
+            this.ClashPathButton.Size = new System.Drawing.Size(38, 24);
+            this.ClashPathButton.TabIndex = 12;
+            this.ClashPathButton.Text = "...";
+            this.ClashPathButton.UseVisualStyleBackColor = true;
+            this.ClashPathButton.Click += ClashPathButton_Click;
             // 
             // SkipUpdatesCheckBox
             // 
-            SkipUpdatesCheckBox.AutoSize = true;
-            SkipUpdatesCheckBox.Location = new System.Drawing.Point(18, 136);
-            SkipUpdatesCheckBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            SkipUpdatesCheckBox.Name = "SkipUpdatesCheckBox";
-            SkipUpdatesCheckBox.Size = new System.Drawing.Size(126, 19);
-            SkipUpdatesCheckBox.TabIndex = 14;
-            SkipUpdatesCheckBox.Text = "Skip game updates";
-            SkipUpdatesCheckBox.UseVisualStyleBackColor = true;
+            this.SkipUpdatesCheckBox.AutoSize = true;
+            this.SkipUpdatesCheckBox.Location = new System.Drawing.Point(18, 136);
+            this.SkipUpdatesCheckBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.SkipUpdatesCheckBox.Name = "SkipUpdatesCheckBox";
+            this.SkipUpdatesCheckBox.Size = new System.Drawing.Size(126, 19);
+            this.SkipUpdatesCheckBox.TabIndex = 14;
+            this.SkipUpdatesCheckBox.Text = "Skip game updates";
+            this.SkipUpdatesCheckBox.UseVisualStyleBackColor = true;
             // 
             // EncryptAccsCheckBox
             // 
-            EncryptAccsCheckBox.AutoSize = true;
-            EncryptAccsCheckBox.Location = new System.Drawing.Point(18, 163);
-            EncryptAccsCheckBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            EncryptAccsCheckBox.Name = "EncryptAccsCheckBox";
-            EncryptAccsCheckBox.Size = new System.Drawing.Size(117, 19);
-            EncryptAccsCheckBox.TabIndex = 17;
-            EncryptAccsCheckBox.Text = "Encrypt accounts";
-            EncryptAccsCheckBox.UseVisualStyleBackColor = true;
-            EncryptAccsCheckBox.CheckedChanged += EncryptAccsCheckBox_CheckedChanged;
+            this.EncryptAccsCheckBox.AutoSize = true;
+            this.EncryptAccsCheckBox.Location = new System.Drawing.Point(18, 163);
+            this.EncryptAccsCheckBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.EncryptAccsCheckBox.Name = "EncryptAccsCheckBox";
+            this.EncryptAccsCheckBox.Size = new System.Drawing.Size(117, 19);
+            this.EncryptAccsCheckBox.TabIndex = 17;
+            this.EncryptAccsCheckBox.Text = "Encrypt accounts";
+            this.EncryptAccsCheckBox.UseVisualStyleBackColor = true;
+            this.EncryptAccsCheckBox.CheckedChanged += EncryptAccsCheckBox_CheckedChanged;
             // 
             // OpenAccountsInRowsCheckbox
             // 
-            OpenAccountsInRowsCheckbox.AutoSize = true;
-            OpenAccountsInRowsCheckbox.Location = new System.Drawing.Point(18, 191);
-            OpenAccountsInRowsCheckbox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            OpenAccountsInRowsCheckbox.Name = "OpenAccountsInRowsCheckbox";
-            OpenAccountsInRowsCheckbox.Size = new System.Drawing.Size(147, 19);
-            OpenAccountsInRowsCheckbox.TabIndex = 18;
-            OpenAccountsInRowsCheckbox.Text = "Open accounts in rows";
-            OpenAccountsInRowsCheckbox.UseVisualStyleBackColor = true;
+            this.OpenAccountsInRowsCheckbox.AutoSize = true;
+            this.OpenAccountsInRowsCheckbox.Location = new System.Drawing.Point(18, 191);
+            this.OpenAccountsInRowsCheckbox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.OpenAccountsInRowsCheckbox.Name = "OpenAccountsInRowsCheckbox";
+            this.OpenAccountsInRowsCheckbox.Size = new System.Drawing.Size(147, 19);
+            this.OpenAccountsInRowsCheckbox.TabIndex = 18;
+            this.OpenAccountsInRowsCheckbox.Text = "Open accounts in rows";
+            this.OpenAccountsInRowsCheckbox.UseVisualStyleBackColor = true;
             // 
             // Options
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(593, 268);
-            Controls.Add(OpenAccountsInRowsCheckbox);
-            Controls.Add(EncryptAccsCheckBox);
-            Controls.Add(SkipUpdatesCheckBox);
-            Controls.Add(ClashPathButton);
-            Controls.Add(RewrittenPathButton);
-            Controls.Add(ClashPath);
-            Controls.Add(RewrittenPath);
-            Controls.Add(GlobalEndCheckBox);
-            Controls.Add(SelectionCheckBox);
-            Controls.Add(ClashLabel);
-            Controls.Add(RewrittenLabel);
-            Controls.Add(OkayButton);
-            FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
-            Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            MaximizeBox = false;
-            MinimizeBox = false;
-            Name = "Options";
-            ShowInTaskbar = false;
-            StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            Text = "Options";
-            Load += Options_Load;
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(593, 268);
+            this.Controls.Add(OpenAccountsInRowsCheckbox);
+            this.Controls.Add(EncryptAccsCheckBox);
+            this.Controls.Add(SkipUpdatesCheckBox);
+            this.Controls.Add(ClashPathButton);
+            this.Controls.Add(RewrittenPathButton);
+            this.Controls.Add(ClashPath);
+            this.Controls.Add(RewrittenPath);
+            this.Controls.Add(GlobalEndCheckBox);
+            this.Controls.Add(SelectionCheckBox);
+            this.Controls.Add(ClashLabel);
+            this.Controls.Add(RewrittenLabel);
+            this.Controls.Add(OkayButton);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "Options";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Options";
+            this.Load += Options_Load;
+            this.ResumeLayout(false);
+            this.PerformLayout();
         }
 
         #endregion
