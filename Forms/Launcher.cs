@@ -211,8 +211,9 @@ namespace Tunetoon.Forms
                 await loginHandler.LoginAccounts(currentAccountList);
                 gameHandler.StartGameForLoggedInAccounts(currentAccountList);
             }
-            catch
+            catch (Exception ex)
             {
+                Console.WriteLine("Exception thrown: " + ex);
                 MessageBox.Show("An error occured during the login process.", "Error", MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
             }
@@ -343,7 +344,7 @@ namespace Tunetoon.Forms
             if (e.ColumnIndex == Toon.Index && !accountGrid.MoveMode)
             {
                 accountEdit.StartEdit(account, e.RowIndex);
-            } 
+            }
             else
             {
                 if (!config.SelectEndGames && account.LoggedIn)
@@ -388,7 +389,7 @@ namespace Tunetoon.Forms
                     rewrittenGameHandler.StopGame(acc);
                 }
             }
-            
+
             if (config.GlobalEndAll || config.GameServer == Server.Clash)
             {
                 foreach (var acc in clashAccountList)
@@ -518,6 +519,19 @@ namespace Tunetoon.Forms
             }
 
             return true;
+        }
+
+        private void ResizeAll_Click(object sender, EventArgs e)
+        {
+            if (rewrittenGameHandler.ActiveProcesses.Count == 0)
+            {
+                MessageBox.Show("What exactly are you resizing? There are no windows open!",
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+                return;
+            }
+            rewrittenGameHandler.ResizeAllWindows(currentAccountList);
         }
     }
 }

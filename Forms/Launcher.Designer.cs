@@ -31,208 +31,205 @@ namespace Tunetoon.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            components = new System.ComponentModel.Container();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Launcher));
-            this.TopMenu = new System.Windows.Forms.MenuStrip();
-            this.serverMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ServerMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.rewrittenMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.clashMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.optionsMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.endSelectedMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.endAllMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.untickAllMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.LoginButton = new System.Windows.Forms.Button();
-            this.accountGrid = new Tunetoon.Grid.AccountGrid();
-            this.Login = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.Toon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ToonSlots = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.End = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.TopMenu.SuspendLayout();
-            this.ServerMenuStrip.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.accountGrid)).BeginInit();
-            this.SuspendLayout();
+            TopMenu = new MenuStrip();
+            serverMenuItem = new ToolStripMenuItem();
+            ServerMenuStrip = new ContextMenuStrip(components);
+            rewrittenMenuItem = new ToolStripMenuItem();
+            clashMenuItem = new ToolStripMenuItem();
+            optionsMenuItem = new ToolStripMenuItem();
+            endSelectedMenuItem = new ToolStripMenuItem();
+            endAllMenuItem = new ToolStripMenuItem();
+            untickAllMenuItem = new ToolStripMenuItem();
+            resizeAllMenuItem = new ToolStripMenuItem();
+            LoginButton = new Button();
+            accountGrid = new AccountGrid();
+            Login = new DataGridViewCheckBoxColumn();
+            Toon = new DataGridViewTextBoxColumn();
+            ToonSlots = new DataGridViewComboBoxColumn();
+            End = new DataGridViewCheckBoxColumn();
+            TopMenu.SuspendLayout();
+            ServerMenuStrip.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)accountGrid).BeginInit();
+            SuspendLayout();
             // 
             // TopMenu
             // 
-            this.TopMenu.AllowMerge = false;
-            this.TopMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.TopMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.serverMenuItem,
-            this.optionsMenuItem,
-            this.endSelectedMenuItem,
-            this.endAllMenuItem,
-            this.untickAllMenuItem});
-            this.TopMenu.Location = new System.Drawing.Point(0, 0);
-            this.TopMenu.Name = "TopMenu";
-            this.TopMenu.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.TopMenu.Size = new System.Drawing.Size(623, 24);
-            this.TopMenu.TabIndex = 0;
-            this.TopMenu.Text = "TopMenu";
-            this.TopMenu.Click += new System.EventHandler(this.TopMenu_Click);
+            TopMenu.AllowMerge = false;
+            TopMenu.ImageScalingSize = new System.Drawing.Size(24, 24);
+            TopMenu.Items.AddRange(new ToolStripItem[] { serverMenuItem, optionsMenuItem, endSelectedMenuItem, endAllMenuItem, untickAllMenuItem, resizeAllMenuItem });
+            TopMenu.Location = new System.Drawing.Point(0, 0);
+            TopMenu.Name = "TopMenu";
+            TopMenu.Padding = new Padding(7, 2, 0, 2);
+            TopMenu.Size = new System.Drawing.Size(623, 24);
+            TopMenu.TabIndex = 0;
+            TopMenu.Text = "TopMenu";
+            TopMenu.Click += TopMenu_Click;
             // 
             // serverMenuItem
             // 
-            this.serverMenuItem.DropDown = this.ServerMenuStrip;
-            this.serverMenuItem.Name = "serverMenuItem";
-            this.serverMenuItem.Size = new System.Drawing.Size(51, 20);
-            this.serverMenuItem.Text = "Server";
+            serverMenuItem.DropDown = ServerMenuStrip;
+            serverMenuItem.Name = "serverMenuItem";
+            serverMenuItem.Size = new System.Drawing.Size(51, 20);
+            serverMenuItem.Text = "Server";
             // 
             // ServerMenuStrip
             // 
-            this.ServerMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.rewrittenMenuItem,
-            this.clashMenuItem});
-            this.ServerMenuStrip.Name = "ServerMenuStrip";
-            this.ServerMenuStrip.OwnerItem = this.serverMenuItem;
-            this.ServerMenuStrip.Size = new System.Drawing.Size(125, 48);
+            ServerMenuStrip.Items.AddRange(new ToolStripItem[] { rewrittenMenuItem, clashMenuItem });
+            ServerMenuStrip.Name = "ServerMenuStrip";
+            ServerMenuStrip.OwnerItem = serverMenuItem;
+            ServerMenuStrip.Size = new System.Drawing.Size(125, 48);
             // 
             // rewrittenMenuItem
             // 
-            this.rewrittenMenuItem.Checked = true;
-            this.rewrittenMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.rewrittenMenuItem.Name = "rewrittenMenuItem";
-            this.rewrittenMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.rewrittenMenuItem.Text = "Rewritten";
-            this.rewrittenMenuItem.Click += new System.EventHandler(this.Rewritten_Click);
+            rewrittenMenuItem.Checked = true;
+            rewrittenMenuItem.CheckState = CheckState.Checked;
+            rewrittenMenuItem.Name = "rewrittenMenuItem";
+            rewrittenMenuItem.Size = new System.Drawing.Size(124, 22);
+            rewrittenMenuItem.Text = "Rewritten";
+            rewrittenMenuItem.Click += Rewritten_Click;
             // 
             // clashMenuItem
             // 
-            this.clashMenuItem.Name = "clashMenuItem";
-            this.clashMenuItem.Size = new System.Drawing.Size(124, 22);
-            this.clashMenuItem.Text = "Clash";
-            this.clashMenuItem.Click += new System.EventHandler(this.Clash_Click);
+            clashMenuItem.Name = "clashMenuItem";
+            clashMenuItem.Size = new System.Drawing.Size(124, 22);
+            clashMenuItem.Text = "Clash";
+            clashMenuItem.Click += Clash_Click;
             // 
             // optionsMenuItem
             // 
-            this.optionsMenuItem.Name = "optionsMenuItem";
-            this.optionsMenuItem.Size = new System.Drawing.Size(61, 20);
-            this.optionsMenuItem.Text = "Options";
-            this.optionsMenuItem.Click += new System.EventHandler(this.Options_Click);
+            optionsMenuItem.Name = "optionsMenuItem";
+            optionsMenuItem.Size = new System.Drawing.Size(61, 20);
+            optionsMenuItem.Text = "Options";
+            optionsMenuItem.Click += Options_Click;
             // 
             // endSelectedMenuItem
             // 
-            this.endSelectedMenuItem.Name = "endSelectedMenuItem";
-            this.endSelectedMenuItem.Size = new System.Drawing.Size(86, 20);
-            this.endSelectedMenuItem.Text = "End Selected";
-            this.endSelectedMenuItem.Visible = false;
-            this.endSelectedMenuItem.Click += new System.EventHandler(this.EndSelected_Click);
+            endSelectedMenuItem.Name = "endSelectedMenuItem";
+            endSelectedMenuItem.Size = new System.Drawing.Size(86, 20);
+            endSelectedMenuItem.Text = "End Selected";
+            endSelectedMenuItem.Visible = false;
+            endSelectedMenuItem.Click += EndSelected_Click;
             // 
             // endAllMenuItem
             // 
-            this.endAllMenuItem.Name = "endAllMenuItem";
-            this.endAllMenuItem.Size = new System.Drawing.Size(56, 20);
-            this.endAllMenuItem.Text = "End All";
-            this.endAllMenuItem.Click += new System.EventHandler(this.EndAll_Click);
+            endAllMenuItem.Name = "endAllMenuItem";
+            endAllMenuItem.Size = new System.Drawing.Size(56, 20);
+            endAllMenuItem.Text = "End All";
+            endAllMenuItem.Click += EndAll_Click;
             // 
             // untickAllMenuItem
             // 
-            this.untickAllMenuItem.Name = "untickAllMenuItem";
-            this.untickAllMenuItem.Size = new System.Drawing.Size(70, 20);
-            this.untickAllMenuItem.Text = "Untick All";
-            this.untickAllMenuItem.Click += new System.EventHandler(this.UntickAll_Click);
+            untickAllMenuItem.Name = "untickAllMenuItem";
+            untickAllMenuItem.Size = new System.Drawing.Size(70, 20);
+            untickAllMenuItem.Text = "Untick All";
+            untickAllMenuItem.Click += UntickAll_Click;
+            // 
+            // resizeAllMenuItem
+            // 
+            resizeAllMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            resizeAllMenuItem.Name = "resizeAllMenuItem";
+            resizeAllMenuItem.Size = new System.Drawing.Size(68, 20);
+            resizeAllMenuItem.Text = "Resize All";
+            resizeAllMenuItem.Click += ResizeAll_Click;
             // 
             // LoginButton
             // 
-            this.LoginButton.Location = new System.Drawing.Point(14, 327);
-            this.LoginButton.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.LoginButton.Name = "LoginButton";
-            this.LoginButton.Size = new System.Drawing.Size(600, 29);
-            this.LoginButton.TabIndex = 2;
-            this.LoginButton.Text = "Play";
-            this.LoginButton.UseVisualStyleBackColor = true;
-            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
+            LoginButton.Location = new System.Drawing.Point(14, 327);
+            LoginButton.Margin = new Padding(4, 3, 4, 3);
+            LoginButton.Name = "LoginButton";
+            LoginButton.Size = new System.Drawing.Size(600, 29);
+            LoginButton.TabIndex = 2;
+            LoginButton.Text = "Play";
+            LoginButton.UseVisualStyleBackColor = true;
+            LoginButton.Click += LoginButton_Click;
             // 
             // accountGrid
             // 
-            this.accountGrid.AllowDrop = true;
-            this.accountGrid.AllowUserToResizeColumns = false;
-            this.accountGrid.AllowUserToResizeRows = false;
-            this.accountGrid.BackgroundColor = System.Drawing.SystemColors.Window;
-            this.accountGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.accountGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Login,
-            this.Toon,
-            this.ToonSlots,
-            this.End});
-            this.accountGrid.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
-            this.accountGrid.Location = new System.Drawing.Point(14, 31);
-            this.accountGrid.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.accountGrid.Name = "accountGrid";
-            this.accountGrid.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.accountGrid.ShowCellToolTips = false;
-            this.accountGrid.Size = new System.Drawing.Size(600, 288);
-            this.accountGrid.TabIndex = 3;
-            this.accountGrid.CellMouseUp += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.AccGrid_OnCellMouseUp);
-            this.accountGrid.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.AccGrid_CellValueChanged);
-            this.accountGrid.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.AccGrid_DataBindingComplete);
-            this.accountGrid.UserDeletingRow += new System.Windows.Forms.DataGridViewRowCancelEventHandler(this.AccGrid_UserDeletingRow);
-            this.accountGrid.DragDrop += new System.Windows.Forms.DragEventHandler(this.AccGrid_DragDrop);
+            accountGrid.AllowDrop = true;
+            accountGrid.AllowUserToResizeColumns = false;
+            accountGrid.AllowUserToResizeRows = false;
+            accountGrid.BackgroundColor = System.Drawing.SystemColors.Window;
+            accountGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            accountGrid.Columns.AddRange(new DataGridViewColumn[] { Login, Toon, ToonSlots, End });
+            accountGrid.EditMode = DataGridViewEditMode.EditOnEnter;
+            accountGrid.Location = new System.Drawing.Point(14, 31);
+            accountGrid.Margin = new Padding(4, 3, 4, 3);
+            accountGrid.Name = "accountGrid";
+            accountGrid.ScrollBars = ScrollBars.Vertical;
+            accountGrid.ShowCellToolTips = false;
+            accountGrid.Size = new System.Drawing.Size(600, 288);
+            accountGrid.TabIndex = 3;
+            accountGrid.CellMouseUp += AccGrid_OnCellMouseUp;
+            accountGrid.CellValueChanged += AccGrid_CellValueChanged;
+            accountGrid.DataBindingComplete += AccGrid_DataBindingComplete;
+            accountGrid.UserDeletingRow += AccGrid_UserDeletingRow;
+            accountGrid.DragDrop += AccGrid_DragDrop;
             // 
             // Login
             // 
-            this.Login.DataPropertyName = "LoginWanted";
-            this.Login.HeaderText = "Login?";
-            this.Login.Name = "Login";
-            this.Login.Width = 50;
+            Login.DataPropertyName = "LoginWanted";
+            Login.HeaderText = "Login?";
+            Login.Name = "Login";
+            Login.Width = 50;
             // 
             // Toon
             // 
-            this.Toon.DataPropertyName = "Toon";
-            this.Toon.HeaderText = "Toon";
-            this.Toon.Name = "Toon";
-            this.Toon.ReadOnly = true;
+            Toon.DataPropertyName = "Toon";
+            Toon.HeaderText = "Toon";
+            Toon.Name = "Toon";
+            Toon.ReadOnly = true;
             // 
             // ToonSlots
             // 
-            this.ToonSlots.HeaderText = "Jump to";
-            this.ToonSlots.Name = "ToonSlots";
-            this.ToonSlots.Width = 125;
+            ToonSlots.HeaderText = "Jump to";
+            ToonSlots.Name = "ToonSlots";
+            ToonSlots.Width = 125;
             // 
             // End
             // 
-            this.End.DataPropertyName = "EndWanted";
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            End.DataPropertyName = "EndWanted";
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Red;
             dataGridViewCellStyle1.NullValue = false;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Red;
-            this.End.DefaultCellStyle = dataGridViewCellStyle1;
-            this.End.HeaderText = "End?";
-            this.End.Name = "End";
-            this.End.ReadOnly = true;
-            this.End.Width = 50;
+            End.DefaultCellStyle = dataGridViewCellStyle1;
+            End.HeaderText = "End?";
+            End.Name = "End";
+            End.ReadOnly = true;
+            End.Width = 50;
             // 
             // Launcher
             // 
-            this.AcceptButton = this.LoginButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(623, 362);
-            this.Controls.Add(this.accountGrid);
-            this.Controls.Add(this.LoginButton);
-            this.Controls.Add(this.TopMenu);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.TopMenu;
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.MaximizeBox = false;
-            this.Name = "Launcher";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Tunetoon";
-            this.Load += new System.EventHandler(this.Launcher_Load);
-            this.Shown += new System.EventHandler(this.Launcher_Shown);
-            this.TopMenu.ResumeLayout(false);
-            this.TopMenu.PerformLayout();
-            this.ServerMenuStrip.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.accountGrid)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AcceptButton = LoginButton;
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new System.Drawing.Size(623, 362);
+            Controls.Add(accountGrid);
+            Controls.Add(LoginButton);
+            Controls.Add(TopMenu);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            MainMenuStrip = TopMenu;
+            Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
+            Name = "Launcher";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Tunetoon";
+            Load += Launcher_Load;
+            Shown += Launcher_Shown;
+            TopMenu.ResumeLayout(false);
+            TopMenu.PerformLayout();
+            ServerMenuStrip.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)accountGrid).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
         #endregion
-        private System.Windows.Forms.MenuStrip TopMenu;
-        private System.Windows.Forms.Button LoginButton;
+        private MenuStrip TopMenu;
+        private Button LoginButton;
         private AccountGrid accountGrid;
         private ToolStripMenuItem endAllMenuItem;
         private ToolStripMenuItem untickAllMenuItem;
@@ -246,5 +243,6 @@ namespace Tunetoon.Forms
         private DataGridViewTextBoxColumn Toon;
         private DataGridViewComboBoxColumn ToonSlots;
         private DataGridViewCheckBoxColumn End;
+        private ToolStripMenuItem resizeAllMenuItem;
     }
 }

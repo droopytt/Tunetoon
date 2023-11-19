@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
+using System.Linq;
+using System.Threading;
 using Tunetoon.Accounts;
 using Tunetoon.Login;
 
@@ -9,10 +11,12 @@ namespace Tunetoon.Game
 {
     public class GameHandlerBase<T> : IGameHandler<T> where T : Account
     {
-        public Dictionary<T, Process> ActiveProcesses = new Dictionary<T, Process>();
+        public Dictionary<T, Process> ActiveProcesses = new();
+        private static readonly string OVERRIDE_ERROR_MESSAGE = "Override for the specific gameserver.";
+
         public virtual void SetupBaseEnvVariables(ILoginResult result, Process gameProcess)
         {
-            throw new NotImplementedException("Override for the specific gameserver.");
+            throw new NotImplementedException(OVERRIDE_ERROR_MESSAGE);
         }
 
         public virtual void OnProcessExit(T account, Process gameProcess)
@@ -53,7 +57,7 @@ namespace Tunetoon.Game
 
         public virtual void StartGame(T account)
         {
-            throw new NotImplementedException("Override for the specific gameserver.");
+            throw new NotImplementedException(OVERRIDE_ERROR_MESSAGE);
         }
 
         public virtual void StopGame(T account)
@@ -65,15 +69,17 @@ namespace Tunetoon.Game
             }
         }
 
-        public void StartGameForLoggedInAccounts(BindingList<T> accountList)
-        {
-            foreach (var account in accountList)
-            {
-                if (account.LoggedIn)
-                {
-                    StartGame(account);
-                }
-            }
+        public void StartGameForLoggedInAccounts(BindingList<T> accountList) {
+            var startedAccounts = accountList.Where(account => account.LoggedIn && !ActiveProcesses.ContainsKey(account)).Select(account => {
+                StartGame(account);
+                return account;
+            }).ToList();
+
+            PerformPostLoginOverrides(startedAccounts);
+        }
+
+        protected virtual void PerformPostLoginOverrides(List<T> accountList) {
+            
         }
     }
 }

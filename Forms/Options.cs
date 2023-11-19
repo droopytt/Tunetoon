@@ -27,6 +27,7 @@ namespace Tunetoon.Forms
             SelectionCheckBox.Checked = endSelectionChecked = config.SelectEndGames;
             GlobalEndCheckBox.Checked = config.GlobalEndAll;
             EncryptAccsCheckBox.Checked = config.EncryptAccounts;
+            OpenAccountsInRowsCheckbox.Checked = config.OpenAccountsInRows;
 
             canShowMasterPasswordForm = true;
         }
@@ -67,7 +68,8 @@ namespace Tunetoon.Forms
             config.SelectEndGames = SelectionCheckBox.Checked;
             config.GlobalEndAll = GlobalEndCheckBox.Checked;
             config.EncryptAccounts = EncryptAccsCheckBox.Checked;
- 
+            config.OpenAccountsInRows = OpenAccountsInRowsCheckbox.Checked;
+
             if (endSelectionChecked != config.SelectEndGames)
             {
                 launcherWnd.SelectionOptionAltered();
